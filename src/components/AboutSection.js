@@ -11,8 +11,12 @@ import InstagramIcon from '@material-ui/icons/Instagram';
 import WifiIcon from '@material-ui/icons/Wifi';
 import CardGiftcardIcon from '@material-ui/icons/CardGiftcard';
 import {links} from "../links.js" ;
+import Stories from 'react-insta-stories';
+import story1 from "../assets/images/story1.MOV"
+import story2 from "../assets/images/story2.JPG"
 
 const useStyles = makeStyles(styles);
+const stories = [story1,story2]
 
 export default function AboutSection(props){
 
@@ -36,7 +40,7 @@ export default function AboutSection(props){
                         <DirectionsRunIcon className={classes.icons} fontSize = "large"> </DirectionsRunIcon>
                         <h4 className={classes.description}>You can track all your mileage (in kilometres) with a range of IOS and Android apps, Such as [Garmin, Polar, Fitbit, Strava, UA running App, Adidas running App, Nike run club, Amazfit].
                         You need to submit your activity here by entering - Distance, Run time, Date and a screenshot from your running app showing us the distance you ran.</h4>
-                        <Button className={classes.navlink} color='danger' onClick={openUpload} > <CloudUpload disabled = 'true'/> Upload Run</Button>
+                        <Button className={classes.navlink} color='danger' onClick={openUpload} disabled = "true" > <CloudUpload /> Upload Run</Button>
                     </GridItem>
 
                     <GridItem xs={12} sm={12} md={6} className={classes.white}>
@@ -46,6 +50,7 @@ export default function AboutSection(props){
                         To stand a chance to win, simply post running pictures on instagram photos/stories, #hashtag  #SUTDVIRTUALRUN and tag @sutd.athletics. Feel free to caption and share 
                         your interesting experiences with us. We will be featuring some of your stories on our instagram page to. So do give us a follow <a href = "https://www.instagram.com/sutd.athletics/">here</a>  to stay up to date!
                         </h4>
+                        
                         <Button className={classes.navlink} color='danger' disabled="true"> <InstagramIcon/> Stories</Button>
                     </GridItem>
 
@@ -66,6 +71,7 @@ export default function AboutSection(props){
 
                     </GridItem>
                 </GridContainer>
+                
             </div>
         </div>
     );

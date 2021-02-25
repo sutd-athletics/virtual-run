@@ -14,6 +14,7 @@
     "prop-types": "^15.7.2",
     "react": "0.0.0-experimental-e2fd460cc",
     "react-dom": "0.0.0-experimental-e2fd460cc",
+    "react-insta-stories": "^2.1.2",
     "react-router-dom": "^5.2.0",
     "react-scripts": "4.0.2",
     "web-vitals": "^1.1.0"
