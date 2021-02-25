@@ -175,7 +175,7 @@ export default function HeaderLinks(props) {
         <ListItem className={classes.listItem}>
           <Link
             color="transparent"
-            to="/sutd-athletics"
+            to="/virtual-run"
             className={classes.navLink}
           >
             <HomeIcon className={classes.icons} /> Home
@@ -194,6 +194,7 @@ export default function HeaderLinks(props) {
         </ListItem>
         <ListItem className={classes.listItem}>
           <Button
+            disabled = 'true'
             color="transparent"
             className={classes.navLink}
             onClick={handleClickOpen}
@@ -202,12 +203,12 @@ export default function HeaderLinks(props) {
           </Button>
         </ListItem>
         <ListItem className={classes.listItem}>
-          <Link to="/scoreboard-page" className={classes.navLink}>
+          <Link to="/virtual-run/scoreboard-page" className={classes.navLink}>
             <ScoreIcon className={classes.icons} /> Scoreboard
           </Link>
         </ListItem>
         <ListItem className={classes.listItem}>
-            <Link to="/faq-page" className={classes.navLink}>
+            <Link to="/virtual-run/faq-page" className={classes.navLink}>
             <LiveHelpIcon className={classes.icons} /> FAQ
             </Link>
         </ListItem>

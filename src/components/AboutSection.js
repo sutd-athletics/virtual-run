@@ -36,7 +36,7 @@ export default function AboutSection(props){
                         <DirectionsRunIcon className={classes.icons} fontSize = "large"> </DirectionsRunIcon>
                         <h4 className={classes.description}>You can track all your mileage (in kilometres) with a range of IOS and Android apps, Such as [Garmin, Polar, Fitbit, Strava, UA running App, Adidas running App, Nike run club, Amazfit].
                         You need to submit your activity here by entering - Distance, Run time, Date and a screenshot from your running app showing us the distance you ran.</h4>
-                        <Button className={classes.navlink} color='danger' onClick={openUpload} > <CloudUpload/> Upload Run</Button>
+                        <Button className={classes.navlink} color='danger' onClick={openUpload} > <CloudUpload disabled = 'true'/> Upload Run</Button>
                     </GridItem>
 
                     <GridItem xs={12} sm={12} md={6} className={classes.white}>
