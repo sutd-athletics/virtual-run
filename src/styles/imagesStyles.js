@@ -1,7 +1,7 @@
 const imagesStyles = {
   imgFluid: {
-    maxWidth: "100%",
-    height: "auto"
+    width: 'auto',
+    maxHeight: "10vh",
   },
   imgRounded: {
     borderRadius: "6px !important"
@@ -29,7 +29,8 @@ const imagesStyles = {
   },
   imgCard: {
     width: "100%",
-    borderRadius: "calc(.25rem - 1px)"
+    borderRadius: "calc(.25rem - 1px)",
+
   },
   imgCardOverlay: {
     position: "absolute",

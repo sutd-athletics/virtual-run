@@ -3,15 +3,10 @@ import imagesStyle from "./imagesStyles.js";
 
 const teamStyle = {
   section: {
-    padding: "70px 0",
+    padding: "5vh 5vw",
     textAlign: "center",
     backgroundColor: "transparent",
-    // backgroundImage: 'url(../assets/images/Background2.jpg)',
-    // backgroundPosition: 'center',
-    // backgroundSize: 'cover',
-    // backgroundAttachment: 'fixed'
     justify: 'center',
-    // top: '-100vh',
     position: 'relative',
     
   },
@@ -36,14 +31,15 @@ const teamStyle = {
   ...imagesStyle,
   itemGrid: {
     marginLeft: "auto",
-    marginRight: "auto"
+    marginRight: "auto",
+    minHeight: "auto",
   },
   cardTitle,
   smallTitle: {
     color: "#6c757d"
   },
   description: {
-    color: "#999"
+    color: "#999",
   },
   justifyCenter: {
     justifyContent: "center !important"
@@ -63,7 +59,8 @@ const teamStyle = {
     margin: "5px"
   },
   card: {
-    // backgroundColor: '',
+    // minHeight: '70vh',
+    height: "50vh"
   },
   background: {
     minWidth: '100vw',
@@ -72,18 +69,13 @@ const teamStyle = {
     backgroundRepeat:'no-repeat',
     backgroundPosition:'center center',
     position: 'fixed',
-    
-    
-    // backgroundImage: 'url(../assets/images/Background2.jpg)',
-    // backgroundPosition: 'center',
-    // backgroundSize: 'cover',
-    // backgroundAttachment: 'fixed',
-    // height: '100vh',
   },
   head: {
     backgroundColor: '#e53e3e',
-    // width: '70vw',
     
+  },
+  cardBody: {
+    height: '100%',
   }
 };
 

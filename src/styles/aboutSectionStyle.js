@@ -18,14 +18,14 @@ const aboutSectionStyle = theme => ({
     },
     light: {
         backgroundColor: "#ffebee",
-        height: "45vh",
-        padding: "0 2vw",
+        // height: "45vh",
+        padding: "2vw 2vw",
         textAlign: "center",
         
     },
     white: {
-        height: "45vh",
-        padding: "0 2vw",
+        // height: "45vh",
+        padding: "2vw 2vw",
         textAlign: "center",
     },
     header: {

@@ -2,7 +2,7 @@ import { title } from "./coreStyles.js";
 
 const infoSectionStyle =  {
   section: {
-    padding: "70px 0",
+    padding: "5vh 10vw",
     textAlign: "center",
     
   },

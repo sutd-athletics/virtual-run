@@ -19,11 +19,11 @@ export default function InfoSection() {
   return (
     <div className={classes.section}>
       <GridContainer justify="center">
-        <GridItem xs={12} sm={12} md={9}>
+        <GridItem xs={12} sm={12} md={12}>
           <h1 className={classes.title}>SUTD Virtual Run</h1>
           <h3 className={classes.description}>
-            The SUTD Virtual Run has begun! Run far, run fast, and most importantly run safe! Remember to log your runs here and 
-            do keep a lookout for the lucky draw. Join our telegram group for the latest notifications. Happy Running!
+            The SUTD inaugural Virtual Run has begun! Run far, run fast, and most importantly run safe! Remember to log your runs here post instagram
+            stories for a chance at the lucky draw. Also, if you haven't already, join our telegram group for the latest notifications. Happy Running!
           </h3>
         </GridItem>
         <GridItem xs={12} sm={8} md={4}>

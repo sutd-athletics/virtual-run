@@ -45,13 +45,13 @@ export default function TeamSection() {
                 <GridItem xs={12} sm={12} md={4} className={classes.itemGrid}>
                   <img src={Jeff} alt="..." className={imageClasses} />
                 </GridItem>
-                <br />
+                
                 <h4 className={classes.cardTitle}>
                   Jeff Lai
                   <br />
                   <small className={classes.smallTitle}>President</small>
                 </h4>
-                <CardBody>
+                <CardBody className={classes.cardBody}>
                   <p className={classes.description}>
                   For me, running is both exercise and a metaphor of life. It trains me to exert myself to the fullest within individual limits. 
                   Pushing myself beyond the comfort zone,  demanding more from myself. I started running long distance a year ago for achieving 
@@ -72,13 +72,12 @@ export default function TeamSection() {
                 <GridItem xs={12} sm={12} md={4} className={classes.itemGrid}>
                   <img src={Wuarn} alt="..." className={imageClasses} />
                 </GridItem>
-                <br />
                 <h4 className={classes.cardTitle}>
                   Wuarn Hong
                   <br />
                   <small className={classes.smallTitle}>Vice President</small>
                 </h4>
-                <CardBody>
+                <CardBody className={classes.cardBody}>
                   <p className={classes.description}>
                   Running has taught me that I am capable of so much more than I can imagine. I hated running as a 
                   child but I still ran, and the more I ran, the easier it became. Before I knew it, I began to love the sport. Running has allowed me to set goals and achieve them. I may not be 
