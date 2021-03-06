@@ -1,6 +1,6 @@
 const parallaxStyle = {
   parallax: {
-    height: "110vh",
+    height: "100vh",
     maxHeight: "1000px",
     minWidth: "100vw",
     overflow: "hidden",
@@ -14,6 +14,7 @@ const parallaxStyle = {
     display: "flex",
     alignItems: "center",
     top: "-5vh",
+    overflow: "scroll"
   },
   filter: {
     "&:before": {
