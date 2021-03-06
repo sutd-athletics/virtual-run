@@ -13,6 +13,7 @@ unstable_createRoot(document.getElementById('root')).render(
     <Route path="/virtual-run/faq-page" component={FaqPage} />
     <Route path="/virtual-run/scoreboard-page" component={ResultsPage} />
     <Route path="/virtual-run" component={HomePage} />
+    <Route path="/" component={HomePage} />
   </Switch>
 </HashRouter>);
 
