@@ -194,7 +194,6 @@ export default function HeaderLinks(props) {
         </ListItem>
         <ListItem className={classes.listItem}>
           <Button
-            disabled = 'true'
             color="transparent"
             className={classes.navLink}
             onClick={handleClickOpen}
