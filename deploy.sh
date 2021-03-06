@@ -20,4 +20,3 @@ git commit -m "$COMMIT_MSG"
 
 git push -f https://github.com/sutd-athletics/virtual-run.git master:gh-pages
 
-cd -
