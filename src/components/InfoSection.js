@@ -9,6 +9,7 @@ import GridItem from "./GridItem.js";
 import styles from "../styles/infoSectionStyle.js";
 import Button from "./Button.js";
 import CreateIcon from '@material-ui/icons/Create';
+import TelegramIcon from '@material-ui/icons/Telegram';
 import {links} from "../links.js" ;
 
 const useStyles = makeStyles(styles);
@@ -21,13 +22,12 @@ export default function InfoSection() {
         <GridItem xs={12} sm={12} md={9}>
           <h1 className={classes.title}>SUTD Virtual Run</h1>
           <h3 className={classes.description}>
-            The SUTD Virtual Run is here to ignite your spirits and boost your energy levels for the second half of the term! 
-            All you have to do is cover a distance of 12km individually, or 60km as a group of 5, over a span of 3 weeks. The event will take place from the 7th to the 28th of March.
-            So what are you waiting for? Hurry and sign up now! Lots of attractive prizes to be won!
+            The SUTD Virtual Run has begun! Run far, run fast, and most importantly run safe! Remember to log your runs here and 
+            do keep a lookout for the lucky draw. Join our telegram group for the latest notifications. Happy Running!
           </h3>
         </GridItem>
         <GridItem xs={12} sm={8} md={4}>
-          <Button className={classes.navlink} href = {links.signupLink} color = 'danger' size = 'lg'> <CreateIcon></CreateIcon>Sign Up</Button>
+          <Button className={classes.navlink} href = "https://t.me/joinchat/SMJYoOIsHSczOWRl" color = 'danger' size = 'lg'> <TelegramIcon></TelegramIcon>Telegram</Button>
         </GridItem>
         
       </GridContainer>
