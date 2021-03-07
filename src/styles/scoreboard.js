@@ -52,6 +52,10 @@ const scoreboardStyle = theme => ({
   inputField: {
     width: "70vw",
     paddingLeft: 10
+  },
+  table: {
+    maxHeight: "70vh",
+    overflow: "scroll",
   }
 })
 export default scoreboardStyle

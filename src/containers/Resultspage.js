@@ -313,55 +313,57 @@ export default function ResultsPage(props) {
             <CircularProgress color="inherit" />
             <div className={classes.loadText}>Working hard to update the rank...</div>
           </Backdrop>
-          <Table style={{minWidth: 700}}>
-            <TableHead>
-              <TableRow>
-                <StyledTableCell>Rank</StyledTableCell>
-                <StyledTableCell>Name</StyledTableCell>
-                <StyledTableCell>Distance Ran (in km)</StyledTableCell>
-                <StyledTableCell>Team</StyledTableCell>
-                <StyledTableCell>Unverified Distance (in km)</StyledTableCell>
-              </TableRow>
-            </TableHead>
-            <TableBody>
-              {displayData.map((d, idx) => {
-                if (d.rank === 1) {
-                  return <FirstTableRow key={idx}>
-                    <TableCell>{d.rank}</TableCell>
-                    <TableCell>{d.name}</TableCell>
-                    <TableCell>{d.distance}</TableCell>
-                    <TableCell><Chip label={d.team} variant="outlined" /></TableCell>
-                    <TableCell><span className={classes.unverifiedText}>{d.unverifiedDistance}</span></TableCell>
-                  </FirstTableRow>
-                } else if (d.rank === 2) {
-                  return <SecondTableRow key={idx}>
-                    <TableCell>{d.rank}</TableCell>
-                    <TableCell>{d.name}</TableCell>
-                    <TableCell>{d.distance}</TableCell>
-                    <TableCell><Chip label={d.team} variant="outlined" /></TableCell>
-                    <TableCell><span className={classes.unverifiedText}>{d.unverifiedDistance}</span></TableCell>
-                  </SecondTableRow>
-                } else if (d.rank === 3) {
-                  return <ThirdTableRow key={idx}>
-                    <TableCell>{d.rank}</TableCell>
-                    <TableCell>{d.name}</TableCell>
-                    <TableCell>{d.distance}</TableCell>
-                    <TableCell><Chip label={d.team} variant="outlined" /></TableCell>
-                    <TableCell><span className={classes.unverifiedText}>{d.unverifiedDistance}</span></TableCell>
-                  </ThirdTableRow>
-                } else {
-                  return <TableRow key={idx}>
-                  <TableCell>{d.rank}</TableCell>
-                  <TableCell>{d.name}</TableCell>
-                  <TableCell>{d.distance}</TableCell>
-                  <TableCell><Chip label={d.team} variant="outlined" /></TableCell>
-                  <TableCell><span className={classes.unverifiedText}>{d.unverifiedDistance}</span></TableCell>
+          <div className={classes.table}>
+            <Table style={{minWidth: 700}}>
+              <TableHead>
+                <TableRow>
+                  <StyledTableCell>Rank</StyledTableCell>
+                  <StyledTableCell>Name</StyledTableCell>
+                  <StyledTableCell>Distance Ran (in km)</StyledTableCell>
+                  <StyledTableCell>Team</StyledTableCell>
+                  <StyledTableCell>Unverified Distance (in km)</StyledTableCell>
                 </TableRow>
+              </TableHead>
+              <TableBody>
+                {displayData.map((d, idx) => {
+                  if (d.rank === 1) {
+                    return <FirstTableRow key={idx}>
+                      <TableCell>{d.rank}</TableCell>
+                      <TableCell>{d.name}</TableCell>
+                      <TableCell>{d.distance}</TableCell>
+                      <TableCell><Chip label={d.team} variant="outlined" /></TableCell>
+                      <TableCell><span className={classes.unverifiedText}>{d.unverifiedDistance}</span></TableCell>
+                    </FirstTableRow>
+                  } else if (d.rank === 2) {
+                    return <SecondTableRow key={idx}>
+                      <TableCell>{d.rank}</TableCell>
+                      <TableCell>{d.name}</TableCell>
+                      <TableCell>{d.distance}</TableCell>
+                      <TableCell><Chip label={d.team} variant="outlined" /></TableCell>
+                      <TableCell><span className={classes.unverifiedText}>{d.unverifiedDistance}</span></TableCell>
+                    </SecondTableRow>
+                  } else if (d.rank === 3) {
+                    return <ThirdTableRow key={idx}>
+                      <TableCell>{d.rank}</TableCell>
+                      <TableCell>{d.name}</TableCell>
+                      <TableCell>{d.distance}</TableCell>
+                      <TableCell><Chip label={d.team} variant="outlined" /></TableCell>
+                      <TableCell><span className={classes.unverifiedText}>{d.unverifiedDistance}</span></TableCell>
+                    </ThirdTableRow>
+                  } else {
+                    return <TableRow key={idx}>
+                    <TableCell>{d.rank}</TableCell>
+                    <TableCell>{d.name}</TableCell>
+                    <TableCell>{d.distance}</TableCell>
+                    <TableCell><Chip label={d.team} variant="outlined" /></TableCell>
+                    <TableCell><span className={classes.unverifiedText}>{d.unverifiedDistance}</span></TableCell>
+                  </TableRow>
+                  }
                 }
-              }
-              )}
-            </TableBody>
-          </Table>
+                )}
+              </TableBody>
+            </Table>
+          </div>
         </TableContainer>
 
         <div className={classes.scoreboardTitleWrapper}>
@@ -375,51 +377,53 @@ export default function ResultsPage(props) {
           </IconButton>
         </Paper>
         <TableContainer component={Paper}>
-          <Table style={{minWidth: 700}}>
-            <TableHead>
-              <TableRow>
-                <StyledTableCell>Rank</StyledTableCell>
-                <StyledTableCell>Team Name</StyledTableCell>
-                <StyledTableCell>Distance Ran (in km)</StyledTableCell>
-                <StyledTableCell>Unverified Distance (in km)</StyledTableCell>
-              </TableRow>
-            </TableHead>
-            <TableBody>
-              {displayTeamData.map((d, idx) => 
-                {
-                  if (d.rank === 1) {
-                    return <FirstTableRow key={idx}>
-                      <TableCell>{d.rank}</TableCell>
+          <div className={classes.table}>
+            <Table style={{minWidth: 700}}>
+              <TableHead>
+                <TableRow>
+                  <StyledTableCell>Rank</StyledTableCell>
+                  <StyledTableCell>Team Name</StyledTableCell>
+                  <StyledTableCell>Distance Ran (in km)</StyledTableCell>
+                  <StyledTableCell>Unverified Distance (in km)</StyledTableCell>
+                </TableRow>
+              </TableHead>
+              <TableBody>
+                {displayTeamData.map((d, idx) => 
+                  {
+                    if (d.rank === 1) {
+                      return <FirstTableRow key={idx}>
+                        <TableCell>{d.rank}</TableCell>
+                        <TableCell>{d.team}</TableCell>
+                        <TableCell>{d.distance}</TableCell>
+                        <TableCell><span className={classes.unverifiedText}>{d.unverifiedDistance}</span></TableCell>
+                      </FirstTableRow>
+                    } else if (d.rank === 2) {
+                      return <SecondTableRow key={idx}>
+                        <TableCell>{d.rank}</TableCell>
+                        <TableCell>{d.team}</TableCell>
+                        <TableCell>{d.distance}</TableCell>
+                        <TableCell><span className={classes.unverifiedText}>{d.unverifiedDistance}</span></TableCell>
+                      </SecondTableRow>
+                    } else if (d.rank === 3) {
+                      return <ThirdTableRow key={idx}>
+                        <TableCell>{d.rank}</TableCell>
+                        <TableCell>{d.team}</TableCell>
+                        <TableCell>{d.distance}</TableCell>
+                        <TableCell><span className={classes.unverifiedText}>{d.unverifiedDistance}</span></TableCell>
+                      </ThirdTableRow>
+                    } else {
+                      return <TableRow key={idx}>
+                      <TableCell>{idx+1}</TableCell>
                       <TableCell>{d.team}</TableCell>
                       <TableCell>{d.distance}</TableCell>
                       <TableCell><span className={classes.unverifiedText}>{d.unverifiedDistance}</span></TableCell>
-                    </FirstTableRow>
-                  } else if (d.rank === 2) {
-                    return <SecondTableRow key={idx}>
-                      <TableCell>{d.rank}</TableCell>
-                      <TableCell>{d.team}</TableCell>
-                      <TableCell>{d.distance}</TableCell>
-                      <TableCell><span className={classes.unverifiedText}>{d.unverifiedDistance}</span></TableCell>
-                    </SecondTableRow>
-                  } else if (d.rank === 3) {
-                    return <ThirdTableRow key={idx}>
-                      <TableCell>{d.rank}</TableCell>
-                      <TableCell>{d.team}</TableCell>
-                      <TableCell>{d.distance}</TableCell>
-                      <TableCell><span className={classes.unverifiedText}>{d.unverifiedDistance}</span></TableCell>
-                    </ThirdTableRow>
-                  } else {
-                    return <TableRow key={idx}>
-                    <TableCell>{idx+1}</TableCell>
-                    <TableCell>{d.team}</TableCell>
-                    <TableCell>{d.distance}</TableCell>
-                    <TableCell><span className={classes.unverifiedText}>{d.unverifiedDistance}</span></TableCell>
-                  </TableRow>
+                    </TableRow>
+                    }
+                  })
                   }
-                })
-                }
-            </TableBody>
-          </Table>
+              </TableBody>
+            </Table>
+          </div>
         </TableContainer>
       </div>
     </div>
